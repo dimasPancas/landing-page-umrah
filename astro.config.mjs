@@ -9,6 +9,7 @@ export default defineConfig({
   vite: {
     plugins: [tailwindcss()]
   },
-
+  site: 'https:dimasPancas.github.io', // Ganti dengan username GitHub kamu
+  base: '/landing-page-umrah',
   integrations: [react()]
 });
