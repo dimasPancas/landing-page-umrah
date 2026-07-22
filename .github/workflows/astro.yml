@@ -2,7 +2,7 @@ name: Deploy Astro site to Pages
 
 on:
   push:
-    branches: ["main"] # Ganti 'master' jika branch utama kamu master
+    branches: ["main"] # Sesuaikan jika nama branch kamu 'master'
 
 permissions:
   contents: read
@@ -23,7 +23,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 22
           cache: 'npm'
 
       - name: Install dependencies
