@@ -1,0 +1,90 @@
+---
+// Hero section with background image, gradient overlay, and dual CTAs
+---
+
+<section id="hero" class="relative min-h-screen flex items-center justify-center overflow-hidden">
+  <!-- Background Image -->
+  <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1591604129939-f1efa4d9f7fa?w=1600&q=80')] bg-cover bg-center bg-no-repeat"></div>
+  
+  <!-- Gradient Overlay -->
+  <div class="absolute inset-0 gradient-overlay"></div>
+
+  <!-- Decorative pattern overlay -->
+  <div
+    class="absolute inset-0 opacity-10"
+    style="background-image: url('data:image/svg+xml,%3Csvg width=\'60\' height=\'60\' viewBox=\'0 0 60 60\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cg fill=\'none\' fill-rule=\'evenodd\'%3E%3Cg fill=\'%23ffffff\' fill-opacity=\'0.4\'%3E%3Cpath d=\'M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');"
+  ></div>
+
+  <div class="relative z-10 text-center text-white px-4 max-w-4xl mx-auto pt-16">
+    <!-- Badge -->
+    <p
+      class="inline-block glass-card text-emerald-200 text-sm font-medium px-5 py-2 rounded-full mb-6 opacity-0 animate-fade-in"
+      style="animation-delay: 0s; animation-fill-mode: forwards;"
+    >
+      ✨ Resmi & Terpercaya Sejak 2015
+    </p>
+
+    <!-- Main Headline -->
+    <h1
+      class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold leading-tight mb-6 opacity-0 animate-fade-in"
+      style="animation-delay: 0.1s; animation-fill-mode: forwards;"
+    >
+      Ibadah Haji & Umrah<br />
+      <span class="text-emerald-300">Khusyuk & Berkah</span>
+    </h1>
+
+    <!-- Description -->
+    <p
+      class="text-base sm:text-lg md:text-xl text-gray-200 max-w-2xl mx-auto mb-10 opacity-0 animate-fade-in"
+      style="animation-delay: 0.2s; animation-fill-mode: forwards;"
+    >
+      Temani perjalanan spiritual Anda menuju Baitullah dengan pelayanan profesional,
+      pembimbing berpengalaman, dan harga yang transparan. InsyaAllah lebih mudah, nyaman, dan penuh keberkahan.
+    </p>
+
+    <!-- Dual CTAs -->
+    <div
+      class="flex flex-col sm:flex-row items-center justify-center gap-4 opacity-0 animate-fade-in"
+      style="animation-delay: 0.3s; animation-fill-mode: forwards;"
+    >
+      <a
+        href="#paket"
+        class="bg-emerald-500 hover:bg-emerald-600 text-white px-8 py-3.5 rounded-full text-base font-bold shadow-lg shadow-emerald-500/30 transition hover:scale-105"
+      >
+        Lihat Paket Umrah
+      </a>
+      <a
+        href="https://wa.me/6281234567890?text=Assalamualaikum%2C%20saya%20ingin%20konsultasi%20umrah"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="glass-card hover:bg-white/20 text-white px-8 py-3.5 rounded-full text-base font-semibold transition hover:scale-105"
+      >
+        Konsultasi Gratis
+      </a>
+    </div>
+  </div>
+
+  <!-- Scroll indicator -->
+  <div class="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
+    <svg class="w-6 h-6 text-white/60" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+    </svg>
+  </div>
+</section>
+
+<style>
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .animate-fade-in {
+    animation: fade-in 0.8s ease forwards;
+  }
+</style>

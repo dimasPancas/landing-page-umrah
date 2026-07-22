@@ -1,0 +1,21 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/Navbar.astro';
+import Hero from '../components/Hero.astro';
+import PackageSection from '../components/PackageSection';
+import FeatureGrid from '../components/FeatureGrid.astro';
+import Testimonials from '../components/Testimonials';
+import FaqSection from '../components/FaqSection';
+import Footer from '../components/Footer.astro';
+import '../styles/global.css';
+---
+
+<Layout>
+  <Navbar />
+  <Hero />
+  <PackageSection client:load />
+  <FeatureGrid />
+  <Testimonials client:load />
+  <FaqSection client:load />
+  <Footer />
+</Layout>
